@@ -1,0 +1,294 @@
+/* Global Styles */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+h1, h2, h3{
+  margin-bottom: 1.5rem;
+}
+
+p, blockquote, .cs-service-cards, .faq-answer, .cs-hero-content{
+  margin-top: 1rem;
+}
+    
+/* Navigation */
+.cs-navigation {
+    background-color: #004d40;
+    padding: 1rem 2;
+}
+    
+.cs-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 2rem;
+}
+    
+.cs-logo {
+    color: #ffffff;
+    font-size: 1.5rem;
+    text-decoration: none;
+}
+    
+.cs-nav {
+    display: flex;
+    gap: 3rem;
+}
+    
+.cs-nav-link {
+    color: #ffffff;
+    text-decoration: none;
+    font-size: 1rem;
+}
+    
+/* Hero Section */
+.cs-hero {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 2rem 1rem;
+    background-color: #f8f8f8;
+    margin-top: 40px;
+    margin-bottom: 40px;
+}
+    
+.cs-hero-content {
+    max-width: 50%;
+}
+    
+.cs-hero h1 {
+    font-size: 2.5rem;
+    color: #004d40;
+}
+    
+.cs-hero p {
+    font-size: 1.25rem;
+    margin: 1rem 0;
+    color: #333333;
+}
+    
+.cs-button {
+    display: inline-block;
+    padding: 0.75rem 1.5rem;
+    
+    margin-bottom: 1rem;
+    margin-left: 1rem;
+    background-color: #004d40;
+    color: #ffffff;
+    text-decoration: none;
+    border-radius: 1rem;
+}
+    
+.cs-button-secondary {
+    background-color: #004d40;
+}
+    
+.cs-hero-image img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 1rem;
+    opacity: 0.5;
+}
+    
+/* Services Section */
+.cs-services {
+    padding: 1rem;
+    background-color: #ffffff;
+    text-align: center;
+    margin-top: 40px;
+    margin-bottom: 40px;
+}
+    
+.cs-services h2 {
+    font-size: 2rem;
+    color: #004d40;
+    margin-bottom: 1.5rem;
+    text-align: center;
+}
+    
+.cs-service-cards {
+    display: flex;
+    justify-content: space-around;
+    gap: 1rem;
+}
+    
+.cs-card {
+    background-color: #f1f1f1;
+    padding: 1.5rem;
+    border-radius: 0.25rem;
+    width: 30%;
+}
+    
+.cs-card h3 {
+    font-size: 1.5rem;
+    color: #004d40;
+    margin-bottom: 1rem;
+}
+    
+.cs-card p {
+    font-size: 1rem;
+    color: #040303;
+}
+
+/* FAQ Section */
+    /* Reset default margins and paddings for all elements */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+/* Style for the main FAQ container */
+.faq-container {
+  margin: 40px auto; /* Center the container and add vertical spacing */
+  padding: 20px;
+  color: black; /* Base text color */
+}
+
+/* Style for the main title */
+.faq-container h1 {
+  font-size: 2rem;
+  font: Arial sans-serif;
+  text-align: center;
+  margin-bottom: 1.5rem;
+  color: #004d40;
+}
+
+/* Style for each FAQ item */
+.faq-item {
+  border-bottom: none; /* Light gray border between items */
+  overflow: hidden; /* Hide overflowing content */
+}
+
+/* Style for the question buttons */
+.faq-question {
+  background-color:  #f1f1f1; /* Light gray background */
+  width: 100%;
+  padding: 20px;
+  text-align: left;
+  font-size: 1rem;
+  border: none;
+  outline: none;
+  color: black;
+  cursor: pointer;
+  position: relative;
+  transition: background-color 0.3s ease; /* Smooth background transition on hover */
+  font-weight: bold;
+}
+
+/* Hover effect for question buttons */
+.faq-question:hover {
+  background-color: #d0d7de; /* Slightly darker gray on hover */
+}
+
+/* Style for the arrow icon */
+.faq-question .arrow {
+  position: absolute;
+  right: 20px;
+  transition: transform 0.3s ease; /* Smooth rotation transition */
+}
+
+/* Rotate the arrow when the question is active (expanded) */
+.faq-question.active .arrow {
+  transform: rotate(180deg); /* Rotate arrow 180 degrees */
+}
+
+/* Style for the answer sections */
+.faq-answer {
+  max-height: 0; /* Initially hide the answer */
+  overflow: hidden;
+  transition: max-height 0.3s ease; /* Smooth transition for expanding */
+  background-color: #fff; /* White background for answers */
+  font-size: 1rem;
+}
+
+/* Style for the answer text */
+.faq-answer p {
+  padding: 20px;
+  font-size: 1rem;
+  line-height: 1.5; /* Increase line height for better readability */
+  color: #555; /* Slightly lighter text color for answers */
+  font: Arial, sans-serif;
+}
+
+/* Harmonious color palette for the body background */
+body {
+  background-color: white; /* Very light blue-gray background */
+}                 
+    
+/* Footer Section */
+footer {
+    background-color: #004d40;
+    color: white;
+    text-align: center;
+    padding: 1rem;
+    margin-top: 50px;
+}
+    
+footer nav a {
+    margin: 0 0.5rem;
+    color: white;
+    text-decoration: none;
+}
+
+#contact .cs-social {
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 0.5rem;
+}
+#contact .cs-social-li {
+  list-style: none;
+}
+#contact .cs-social-link {
+  width: 2rem;
+  height: 2rem;
+  background-color: #004d40;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: background-color 0.3s;
+}
+#contact .cs-social-link:hover {
+  background-color: white;
+}
+#contact .cs-social-link:hover .cs-social-icon {
+  filter: grayscale(1) brightness(0);
+  opacity: 1;
+}
+#contact .cs-social-icon {
+  width: 0.75rem;
+  height: auto;
+  display: block;
+  opacity: 1;
+  color: white;
+  filter: none;
+}
+#contact .cs-copyright {
+  font-size: 1rem;
+  line-height: 1.5em;
+  margin: 0;
+  color: white;
+  display: block;
+}
+#contact .cs-copyright-link {
+  font-size: inherit;
+  text-decoration: none;
+  color: white;
+  transition: color 0.3s;
+}
+#contact .cs-copyright-link:hover {
+  color: white;
+}
+
